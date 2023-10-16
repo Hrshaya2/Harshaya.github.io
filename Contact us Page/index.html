@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header id="home">
+        <!--Navigation bar-->
+        <div class="navbar">
+            <nav>
+                <h2 class="logo"><span class="icon">Shop</span> with-us</h2>
+            <ul>
+                <li><a href="D:\testing HTML\online store\index.html">Home</a></li>
+                <li><a href="D:\testing HTML\online store\index.html">About</a></li>
+                <li><a href="D:\testing HTML\online store\index.html">Shop</a></li>
+                <li><a href="D:\testing HTML\online store\Contact us Page\index.html">Contact us</a></li>
+            </ul>
+            <button type="button" class="JOING"><a href="D:\testing HTML\online store\Login page\index.html">JOING</a></button>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </nav>
+        <!--dropdown menu-->
+            <div class="dropdown_menu">
+                <div class="dropdown_list">
+                    <li><a href="D:\testing HTML\online store\index.html">Home</a></li>
+                    <li><a href="D:\testing HTML\online store\index.html">About</a></li>
+                    <li><a href="D:\testing HTML\online store\index.html">Shop</a></li>
+                    <li><a href="D:\testing HTML\online store\Contact us Page\index.html">Contact us</a></li>
+                    <li><button type="button" class="btn"><a href="D:\testing HTML\online store\Login page\index.html">JOING</a></button></li>
+                </div>
+            </div>
+        <!--Java codes for animation-->
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+            
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle ('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+        
+    </header>
+    <!--contct us-->
+    <div class="container">
+        <div class="contact-form">
+            <h2>We're Here for You</h2>
+            <form action="#" method="post">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <div class="details">
+                <h2>Contact Details</h2>
+                <p>98 TB Jaya Mawatha</p>
+                <p>Colombo 3</p>
+                <p>Email: Shopwithus@gmail.com</p>
+                <p>Phone: +94 11-4556890 </p>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        <div class="contact">
+            <p class="border">Phone: +94 11-4556890</p>
+            <p class="border">Email: Shopwithus@gmail.com</p>
+            <p>Made &#9829; with Harshaya &#169; 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

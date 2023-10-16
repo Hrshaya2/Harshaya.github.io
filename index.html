@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop with us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Inconsolata:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=PT+Sans:wght@400;700&family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="D:\testing HTML\addtocardv2-main\style.css">
+</head>
+<body>
+    <header id="home">
+        <!--Navigation bar-->
+        <div class="navbar">
+            <nav>
+                <h2 class="logo"><span class="icon">Shop</span> with-us</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="D:\testing HTML\online store\Contact us Page\index.html">Contact us</a></li>
+            </ul>
+            <button type="button" class="JOING"><a href="D:\testing HTML\online store\Login page\index.html">JOING</a></button>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </nav>
+        <!--dropdown menu-->
+            <div class="dropdown_menu">
+                <div class="dropdown_list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="D:\testing HTML\online store\Contact us Page\index.html">Contact us</a></li>
+                    <li><button type="button" class="btn"><a href="D:\testing HTML\online store\Login page\index.html">JOING</a></button></li>
+                </div>
+            </div>
+
+        <!--Main motivation-->
+            <div class="motivation">
+                <h1 class="light">Light up Your <span class="life">Life</span></h1>
+                <p>Illuminate your space with elegance discover our 
+                    stuning <span class="table-lamp">Table-Lamp</span> collection
+                </p>
+                <button type="button" class="shop_now"><a href="#shop">Shop Now</a></button>
+            </div>
+        </div>
+        <!--Java codes for animation-->
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+            
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle ('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+    </header>
+    <!--about section-->
+    <section class="About-us" >
+        <div class="heading">
+            <h1 id="about">About Us</h1>
+        </div>
+        <div class="montainer">
+            <div class="about-cont">
+                <h2>CEO of SHOP with-us</h2>
+                <p>
+                    "As a 20-year spice merchant, our global journey has been seasoned with passion and driven by your love for exceptional flavors.
+                    Together, we've created a world where spices unite cultures, tantalize taste buds, and inspire culinary adventures. Thank you for 
+                    being our spice-loving family, and here's to another 20 years of flavor, innovation, and global impact." 
+                </p>
+                <button type="button" class="btn">Learn-more</button>
+            </div>
+            <div class="about-image">
+                <img src="D:/testing HTML/online store/images/pexels-photo-1043473.jpeg" alt="business-man">
+            </div>
+        </div>
+    </section>
+    <a class="gotop" href="#home"><i class="fa-solid fa-arrow-up"></i></i></a>
+<!--shop-->
+
+    <div class="shopbody" id="shop">
+    
+        <div class="container">
+            <div class="leader">
+                <h1>Shop With us Online Store</h1>
+                <div class="shopping">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                    <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                    <span class="quantity">0</span>
+                </div>
+            </div>
+    
+            <div class="list">
+              
+            </div>
+        </div>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+    
+        <script src="D:\testing HTML\addtocardv2-main\app.js"></script>
+    </div>
+</body>
+<footer>
+    <div class="contact">
+        <p class="border">Phone: +94 11-4556890</p>
+        <p class="border">Email: Shopwithus@gmail.com</p>
+        <p>Made &#9829; with Harshaya &#169; 2023</p>
+    </div>
+</footer>
+</html>
